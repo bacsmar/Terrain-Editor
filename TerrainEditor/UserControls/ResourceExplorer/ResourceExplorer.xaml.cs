@@ -177,8 +177,11 @@ namespace TerrainEditor.UserControls
                 IsExpanded = true,
                 IsSelected = true
             };
-
-            System.IO.Directory.SetCurrentDirectory(Path.GetFullPath(instance.WorkPath));
+            
+            //if (System.IO.Directory.Exists(Path.GetFullPath(instance.WorkPath)))
+            {                
+                System.IO.Directory.SetCurrentDirectory(Path.GetFullPath(instance.WorkPath));
+            }            
         }
         private static void OnRefreshResources(DependencyObject obj, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {

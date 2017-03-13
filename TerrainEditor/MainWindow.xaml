@@ -116,7 +116,7 @@
 
             <lcl:PropertiesEditor Background="#252525" Grid.Column="2" Grid.RowSpan="3" Grid.Row="0" Source="{Binding SelectedTerrain}"/>
 
-            <lcl:ResourceExplorer Grid.Row="2" WorkPath="C:\Users\elios\elios' files" >
+            <lcl:ResourceExplorer Grid.Row="2" WorkPath="{Binding CurrentPath}" >
 
                 <lcl:ResourceExplorer.ResourceInfoProviders>
                     <lcl:ResourceInfoProviderCollection>

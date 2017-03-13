@@ -22,5 +22,6 @@ namespace TerrainEditor
                 }));
         }
 
+        public string CurrentPath => Environment.CurrentDirectory;
     }
 }
